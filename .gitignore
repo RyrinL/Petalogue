@@ -1,5 +1,15 @@
 .DS_Store
 
+# Secrets — never commit
+Secrets.swift
+GoogleService-Info.plist
+
+# ML training images — download locally via TrainingData/fetch_training_images.py
+TrainingData/**/*.jpg
+TrainingData/**/*.jpeg
+TrainingData/**/*.png
+*.mlmodel
+
 # Xcode
 DerivedData/
 build/

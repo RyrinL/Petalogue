@@ -11,6 +11,15 @@
 		D30C55C82FDA5D3100829C1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C55C72FDA5D3100829C1B /* ContentView.swift */; };
 		D30C55CA2FDA5D3500829C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30C55C92FDA5D3500829C1B /* Assets.xcassets */; };
 		D30C55CD2FDA5D3500829C1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30C55CC2FDA5D3500829C1B /* Preview Assets.xcassets */; };
+		AA0000000000000000000002 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* Secrets.swift */; };
+		AA0000000000000000000004 /* flowers.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* flowers.json */; };
+		AA0000000000000000000012 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* Flower.swift */; };
+		AA0000000000000000000014 /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* CatalogService.swift */; };
+		AA0000000000000000000016 /* Sighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* Sighting.swift */; };
+		AA0000000000000000000018 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* PhotoStore.swift */; };
+		AA000000000000000000001A /* FlowerIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000019 /* FlowerIdentifying.swift */; };
+		AA000000000000000000001C /* PlantNetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001B /* PlantNetService.swift */; };
+		AA0000000000000000000023 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000022 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		D30C55C72FDA5D3100829C1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D30C55C92FDA5D3500829C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30C55CC2FDA5D3500829C1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA0000000000000000000001 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* flowers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flowers.json; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* Sighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sighting.swift; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		AA0000000000000000000019 /* FlowerIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerIdentifying.swift; sourceTree = "<group>"; };
+		AA000000000000000000001B /* PlantNetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantNetService.swift; sourceTree = "<group>"; };
+		AA0000000000000000000022 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +71,43 @@
 			children = (
 				D30C55C52FDA5D3100829C1B /* PetalogueApp.swift */,
 				D30C55C72FDA5D3100829C1B /* ContentView.swift */,
+				AA0000000000000000000005 /* Catalog */,
+				AA0000000000000000000020 /* Sighting */,
+				AA0000000000000000000021 /* Identification */,
+				AA0000000000000000000001 /* Secrets.swift */,
 				D30C55C92FDA5D3500829C1B /* Assets.xcassets */,
 				D30C55CB2FDA5D3500829C1B /* Preview Content */,
 			);
 			path = Petalogue;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000011 /* Flower.swift */,
+				AA0000000000000000000013 /* CatalogService.swift */,
+				AA0000000000000000000003 /* flowers.json */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000020 /* Sighting */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000015 /* Sighting.swift */,
+				AA0000000000000000000022 /* PersistenceController.swift */,
+				AA0000000000000000000017 /* PhotoStore.swift */,
+			);
+			path = Sighting;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000021 /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000019 /* FlowerIdentifying.swift */,
+				AA000000000000000000001B /* PlantNetService.swift */,
+			);
+			path = Identification;
 			sourceTree = "<group>";
 		};
 		D30C55CB2FDA5D3500829C1B /* Preview Content */ = {
@@ -127,6 +178,7 @@
 			files = (
 				D30C55CD2FDA5D3500829C1B /* Preview Assets.xcassets in Resources */,
 				D30C55CA2FDA5D3500829C1B /* Assets.xcassets in Resources */,
+				AA0000000000000000000004 /* flowers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +191,14 @@
 			files = (
 				D30C55C82FDA5D3100829C1B /* ContentView.swift in Sources */,
 				D30C55C62FDA5D3100829C1B /* PetalogueApp.swift in Sources */,
+				AA0000000000000000000002 /* Secrets.swift in Sources */,
+				AA0000000000000000000012 /* Flower.swift in Sources */,
+				AA0000000000000000000014 /* CatalogService.swift in Sources */,
+				AA0000000000000000000016 /* Sighting.swift in Sources */,
+				AA0000000000000000000018 /* PhotoStore.swift in Sources */,
+				AA000000000000000000001A /* FlowerIdentifying.swift in Sources */,
+				AA000000000000000000001C /* PlantNetService.swift in Sources */,
+				AA0000000000000000000023 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +330,9 @@
 				DEVELOPMENT_TEAM = ZV72HLVDD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+					INFOPLIST_KEY_NSCameraUsageDescription = "Petalogue uses your camera to identify flowers.";
+					INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Petalogue records where you found each flower.";
+					INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Petalogue saves your flower photos to your collection.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +362,9 @@
 				DEVELOPMENT_TEAM = ZV72HLVDD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+					INFOPLIST_KEY_NSCameraUsageDescription = "Petalogue uses your camera to identify flowers.";
+					INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Petalogue records where you found each flower.";
+					INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Petalogue saves your flower photos to your collection.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
