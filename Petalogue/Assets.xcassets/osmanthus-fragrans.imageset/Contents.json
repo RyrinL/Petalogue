@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "osmanthus-fragrans.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "prunus-mume.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
